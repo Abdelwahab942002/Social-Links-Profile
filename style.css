@@ -1,0 +1,87 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+
+    --font: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--Grey900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+}
+
+main{
+    background-color: var(--Grey800);
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.image img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.name{  
+    text-align: center;
+    margin: 0;
+    font-family: var(--font);
+}
+.name h2{
+    margin-bottom: 0;
+    color: var(--White);
+    font-weight: 600;
+}
+.name h5{
+    margin-top: 10px;
+    color: var(--Green);
+    font-weight: 600;
+}
+
+.job{
+    color: var(--White);
+    text-align: center;
+}
+.job p{
+    margin-top: 30px;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.links ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+}
+.links ul li{
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 40px;
+    background-color: var(--Grey700);
+    margin: 15px 35px 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 14px;
+}
+.links ul li:hover{
+    background-color: var(--Green);
+    color: var(--Grey800);
+    cursor: pointer;
+}
